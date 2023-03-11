@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="./index_files/css/index.css">
+    <title>RockyLeatherDesign - Building Happy Wedding</title>
+    <style>
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    /* 默认最小高度：2屏 */
+    min-height: 200vh;
+    background: #152331;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #152331);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #152331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+header{
+    /* 固定定位 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 弹性布局 */
+    display: flex;
+    /* 将元素靠边对齐 */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1;
+    /* 动画过渡 */
+    transition: 0.6s;
+}
+header .logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    /* 转大写 */
+    text-transform: uppercase;
+    /* 字间距 */
+    /* letter-spacing: 2px; */
+    transition: 0.6s;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+.banner1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/car1.jpg") no-repeat;
+    /* 保持原有尺寸比例，裁切长边 */
+    background-size: cover;
+    /* 图片定位正中间 */
+    background-position: center center;
+}
+.banner2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/car2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* 鼠标滚动后，改变导航栏样式 */
+header.sticky{
+    padding: 6px 100px;
+    background-color: #fff;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+    </style>
+    <style>
+        li {
+            font-size:120%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">RockyLeatherDesign</a>
+        <ul>
+            <li><a href="#">Index page</a></li>
+            <li><a href="./new.html">New Product</a></li>
+            <li><a href="./classification.html">Product Classification</a></li>
+            <li><a href="./cart.html">Shopping Cart</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockyLeatherDesign - Building Happy Wedding</title>
+    <link rel="apple-touch-icon" href="./index_files/logo.png">
+    <link rel="icon" href="./index_files/img/icon.ico">
+    <link rel="stylesheet" href="./index_files/css/index.css">
+<body align="center" class="bg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Welcome -->
+    <h1>Welcome to the RockyLeatherDesign!</h1>
+    <br>
+    <br>
+    <!-- logo -->
+    <div align="center">
+        <a href="./classification.html"><img src="./cart/img/icon.jpg" alt="Picture cannot be displayed!" class="logo" title="RockyLeatherDesign"></a>
+        <a href="./classification.html"><img src="./index_files/img/intr.png" alt="Picture cannot be displayed!" title="RockyLeatherDesign - The best gifts for family"></a>
+    </div>
+    <br>
+    <br>
+    <!-- introduction -->
+    <div class="itr">
+        <strong><b><h2>We provide weddings and anniversary products with personalized engravings on them.</h2></br><h2>It could be a perfect gift choice on weddings, Valentines, Father's Day, Christmas, New Year......</h2></b></strong>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- <br> -->
+    <!-- <br> -->
+    <br>
+    <br>
+    <br>
+    <h1>The hot products are as follows:</h1>
+    <br>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>card</title>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div class="container">
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Bachelor Party Gift</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Groomsmen Gift; Wedding Gift;
+                        </div>
+                        <div>
+                            Personalized Men's Sunglasses; 
+                        </div>
+                        <div>
+                            Bamboo Wooden Sunglasses; Best Men
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Customized Cufflinks</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Personalized Cufflinks;
+                        </div>
+                        <div>
+                            Wood Cufflinks, Wedding Gifts, Groom Gift, Custom Cufflinks;
+                        </div>
+                        <div>
+                            Groomsman Gift; Husband Gift
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Aviator Sunglasses</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Personalized Unisex Sunglasses, Bachelor Party;
+                        </div>
+                        <div>
+                            Groomsmen Gift, Bridesmaid Gift;
+                        </div>
+                        <div>
+                            Wood Sunglasses, Party Sunglasses, Xmas;
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Engraved Polarized Sunglasses</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Bachelor Party Gift; Groomsmen Wedding Gift;
+                        </div>
+                        <div>
+                            Unisex Sunglasses; Bridal Party Gift; 
+                        </div>
+                        <div>
+                            Maid of Honor; Bridesmaid
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Personalized Walnut Wood Sunglasses</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Engraved Sunglasses, Wooden Box;
+                        </div>
+                        <div>
+                            Men Gift, Usher Gift;
+                        </div>
+                        <div>
+                            Best Man, Groomsmen Gifts
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Engraved Green Lens Sunglasses</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Wood Box, Men's/Groom/Wedding Gift;
+                        </div>
+                        <div>
+                            Bachelor Party Sunglasses;
+                        </div>
+                        <div>
+                            Husband Gift
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Engraved Aviator Sunglasses</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Groomsmen Gift; Wedding Gift;
+                        </div>
+                        <div>
+                            Men's Sunglasses; Father's Gift; Christmas Gift;
+                        </div>
+                        <div>
+                            Personalized Groom Gift
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Customize Wallet</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            It's not just children's paintings,
+                        </div>
+                        <div>
+                            You can customize what you want!
+                        </div>
+                        <div>
+                            It can be a company LOGO or a totem......
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>The Secret Life of Walter Mitty---Wallet</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Men's Leather Trifold Wallet;
+                        </div>
+                        <div>
+                            Groomsmen Gifts;
+                        </div>
+                        <div>
+                            Minimalist Men's Travel Wallets Wallets for men
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="card">
+                <div class="content">
+                    <br>
+                    <h1>Custom Husband's Wallet</h1>
+                    <br>
+                    <h3>
+                        <div>
+                            Engraved Anniversary Wallet;
+                        </div>
+                        <div>
+                            Personalized Mens Wallet, Custom Men Christmas Wallet
+                        </div>
+                        <div>
+                            Men's Wallet, Father's Day gift
+                        </div>
+                        <br>
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Know more</span>
+                            </span>
+                        </button>
+                    </h3>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </body>
+    </html> 
+</body>
+</html>
+<br>
+<button class="button2" onclick="window.location.href='./classification.html'" title="View all product categories">
+    <span>View all product categories</span><i></i>
+</button>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<h2 align="center" class="container" id="h666">Advantage of payment:</h2>
+<br>
+<img src="./index_files/img/QQ截图20230305123839.png" alt="" class="pay1" align="right">
+<br>
+<br>
+<br>
+<div align="center"><h3 class="pay">We use PayPal</h3></div>
+<div align="center"><h3 class="pay">which is more secure!</h3></div>
+<div align="center"><h3 class="pay">Make every payment </h3></div>
+<div align="center"><h3 class="pay">more secure!</h3></div>
+<div align="center"><h3 class="pay">Let you more peace</h3></div>
+<div align="center"><h3 class="pay">of mind, more worry!</h3></div>
+<style>
+.pay {
+    /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "思源黑体 Regular";font-weight: 1000;src: url("//at.alicdn.com/wf/webfont/xxdhaLILDceG/vfIPY3EZLAc3FezXJqc1K.woff2") format("woff2"),
+  url("//at.alicdn.com/wf/webfont/xxdhaLILDceG/KDmZ60FO5vcMnbG46kBwp.woff") format("woff");
+  font-display: swap;
+}
+    color: #fff;
+    font-size: 35px;
+    /* 字间距 */
+    letter-spacing: 6px;
+    /* 转大写 */
+    text-transform: uppercase;
+}
+
+.pay1 {
+
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+
+#h666{
+    font-family: "钉钉进步体";
+    color: #fff;
+    font-size: 30px;
+    /* 字间距 */
+    letter-spacing: 10px;
+    /* 转大写 */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 76px;
+    outline: none;
+}
+
+/* 定义动画 */
+@keyframes animate {
+    to{
+        /* 色相旋转滤镜（设置度数可改变颜色） */
+        filter: hue-rotate(360deg);
+    }
+}
+
+</style>
+
+    <script>
+        // 鼠标滚轮滚动事件
+        window.addEventListener("scroll",()=>{
+            let header=document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY>0);
+        })
+        function cleartext(){
+            document.getElementById("text").value = "";
+        }
+    </script>
+    
+</body>
+</html>

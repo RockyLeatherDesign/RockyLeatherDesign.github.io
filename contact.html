@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please use E-mail to contact us!</title>
+    <link rel="stylesheet" href="./index_files/css/contact.css">
+    <link rel="icon" href="./index_files/img/icon.ico">
+</head>
+<body align="center" class="bg">
+    <!-- <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>导航栏</title>
+            <style>
+                body{background: whitesmoke;font-size: 14px;margin: 0;}
+                nav ul li{list-style: none;}
+                a {text-decoration: none;}
+                .container{width: 1000px; height: 62px;margin: auto;}
+                nav {background: #474747;}
+                nav ul {font-size: 0;margin: 0;padding: 0;}
+                nav ul li {display: inline-block;}
+                nav ul li a {
+                color: #fff;
+                display: block;
+                font-size: 20px;
+                padding: 15px 14px;
+                transition: 0.3s linear;
+                }
+                nav ul li:hover {background: #6b7980;height: 62px;}
+                nav ul li ul {
+                border-bottom: 5px solid #2ba0db;
+                display: none;
+                position: absolute;
+                width: 250px;
+                }
+                nav ul li ul li {
+                border-top: 1px solid #444;
+                display: block;
+                }
+                
+                nav ul li ul li:first-child {
+                border-top: none;
+                }
+                
+                nav ul li ul li a {
+                background:cadetblue;
+                display: block;
+                padding: 10px 14px;
+                }
+                
+                nav ul li ul li a:hover {
+                background: #126d9b;
+                }
+                
+                nav .fa.fa-angle-down {
+                margin-left: 6px;
+                }
+            </style>
+        </head>
+        <body>
+            <nav>
+                <div class="container">
+                    <ul>
+                    <li><a href="./index.html" title="Hot products">Hot products</a></li>
+                    <li><a href="./story.html" title="Shop story">Shop story</a></li>
+                    <li>
+                        <a href="./classification.html" title="All products">All products<i class='fa fa-angle-down'></i></a>
+                    </li>
+                    <li class='sub-menu'>
+                        <a href="./cart.html" title="Cart">Cart<i class='fa fa-angle-down'></i></a>
+                    </li>
+                    <li><a href="./contact.html" title="Contact us">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+    <script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+    <script>
+    $('nav li').hover(
+    function() {
+        $('ul', this).stop().slideDown(200);
+    },
+        function() {
+        $('ul', this).stop().slideUp(200);
+    }
+    );
+    </script>
+        </body>
+    </html> -->
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>滚动渐变导航栏</title>
+    <style>
+        /* 引入网络字体（Poppins） */
+@import url("http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Poppins"; */
+}
+body{
+    /* 默认最小高度：2屏 */
+    min-height: 100vh;
+    
+}
+header{
+    /* 固定定位 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 弹性布局 */
+    display: flex;
+    /* 将元素靠边对齐 */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1;
+    /* 动画过渡 */
+    transition: 0.6s;
+}
+header .logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    /* 转大写 */
+    text-transform: uppercase;
+    /* 字间距 */
+    /* letter-spacing: 2px; */
+    transition: 0.6s;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+/* 鼠标滚动后，改变导航栏样式 */
+header.sticky{
+    padding: 6px 100px;
+    background-color: #fff;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+
+li {
+    font-size: 120%;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">RockyLeatherDesign</a>
+        <ul>
+            <li><a href="./index.html">Index page</a></li>
+            <li><a href="./new.html">New Product</a></li>
+            <li><a href="./classification.html">Product Classification</a></li>
+            <li><a href="./cart.html">Shopping Cart</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <!--  -->
+    <script>
+        // 鼠标滚轮滚动事件
+        window.addEventListener("scroll",()=>{
+            let header=document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY>0);
+        })
+    </script>
+</body>
+
+</html>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 align="left"> Dear customer,</h1>
+    <br>
+    <h2 align="left">     During this period of global pandemic, shipping has slowed down due to the largely canceled international flights and stricter Custom regulations in each country, so we are not able to guarantee delivery efficiency in this special period, since all shipping companies now cannot promise delivery efficiency. Early ordering will always be a better choice.</h2>
+    <br>
+    <h2 align="left">Due to the spreading of COVID-19, we are not able to ship watches by standard shipping anymore. For buyers who intend to buy watches, pls choose the fast express service in our shop.</h2>
+    <br>
+    <h2 align="left">For any question, please do not hesitate to contact us by conversation. Have a good time in our shop.</h2>
+    <br>
+    <h2 align="left">You can contact us at tonywgy@163.com!</h2>
+    <div align="left">
+        <img src="./index_files/img/email.png" alt="" align="center">
+    </div>
+    <br>
+    <h1 align="left"> Best regards,</h1>
+    <br>
+    <h1 align="left"> Rocky Leather Design</h1>
+    <br>
+</body>
+</html>

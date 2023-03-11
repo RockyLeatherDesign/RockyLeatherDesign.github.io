@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product classification</title>
+    <link rel="icon" href="./index_files/img/icon.ico">
+    <link rel="stylesheet" href="./index_files/css/classification.css">
+</head>
+<body align="center">
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>滚动渐变导航栏</title>
+    <style>
+      /* div {
+        width: 190px;
+      } */
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFc-K.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Droid Sans Fallback Regular';
+}
+body{
+    /* 默认最小高度：2屏 */
+    min-height: 150vh;
+    background-color: #000;
+}
+header{
+    /* 固定定位 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 弹性布局 */
+    display: flex;
+    /* 将元素靠边对齐 */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1;
+    /* 动画过渡 */
+    transition: 0.6s;
+}
+header .logo{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    /* 转大写 */
+    text-transform: uppercase;
+    /* 字间距 */
+    /* letter-spacing: 1px; */
+    transition: 0.6s;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+/* 鼠标滚动后，改变导航栏样式 */
+header.sticky{
+    padding: 6px 100px;
+    background-color: #fff;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+li {
+    font-size: 120%;
+    font-family: 'Droid Sans Fallback Regular';
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">RockyLeatherDesign</a>
+        <ul>
+            <li><a href="./index.html">Index page</a></li>
+            <li><a href="./new.html">New Product</a></li>
+            <li><a href="#">Product Classification</a></li>
+            <li><a href="./cart.html">Shopping Cart</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <!--  -->
+    <!DOCTYPE html>
+    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>轮播图</title>
+        <link rel="stylesheet" href="./index1_files/demo.css">
+    </head>
+
+    <body>
+
+        <div id="banner">
+            <div class="img-wrap">
+                <ul>
+                    <li class="item" style="display: list-item; opacity: 0.833591;">
+                        <img src="./index1_files/xm1.jpg" width="1347px" height="485px" alt="" title="Engraved Green Lens Sunglasses">
+                    </li>
+                    <li class="item" style="display: list-item;">
+                        <img src="./index1_files/xm2.jpg" width="1347px" height="485px" alt="" title="The Secret Life of Walter Mitty---Wallet">
+                    </li>
+                    <li class="item" style="display: none;">
+                        <img src="./index1_files/xm3.jpg" width="1347px" height="485px" alt="" title="Customized Cufflinks">
+                    </li>
+                    <li class="item" style="display: none;">
+                        <img src="./index1_files/xm4.jpg" width="1347px" height="485px" alt="" title="Personalized Walnut Wood Sunglasses">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lr-tab">
+                <img src="./index1_files/zuo.png" alt="" class="zuo-btn">
+                <img src="./index1_files/you.png" alt="" class="you-btn">
+            </div>
+
+            <div class="tab-btn">
+                <ul>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./index1_files/jquery-3.3.1.js.下载"></script>
+        <script>
+            var index = 0;//初始话一个变量 指向下标
+
+        
+            $(".tab-btn .btn").click(function () {
+                index = $(this).index();//获取点击元素的下标
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".item").eq(index).fadeIn().siblings().fadeOut();
+                //eq方法 找到第 下标 个图片，让他淡入,
+                //同时为了避免每张图片只能点击一次，所以找到其他图片，让他们淡出
+
+                // alert(index);
+            });//通过点击事件 点击到小按钮
+            //siblings().  当我们点击给他添加样式的时候，
+            //找到除了点击以外的其他的兄弟元素，删除他的class名字
+
+            $(".lr-tab .you-btn").click(function () {
+                index++;//下标变大
+                if (index > 4) {
+                    index = 0;
+                }
+                $(".item").eq(index).fadeIn().siblings().fadeOut();
+                //找到图片，找到现在index指向的那张图片，让他淡入，并将其他的图片淡出
+                $(".tab-btn .btn").eq(index).addClass("active").siblings().removeClass("active");
+                //这里和之前类似，找到当前下标的按钮，给他添加显示样式，给其他兄弟移除样式。
+            });//通过点击事件 点击到小按钮
+            //siblings().  当我们点击给他添加样式的时候，
+            //找到除了点击以外的其他的兄弟元素，删除他的class名字
+
+            $(".lr-tab .zuo-btn").click(function () {
+                index--;
+                if (index < 0) {
+                    index = 4;
+                }
+                $(".item").eq(index).fadeIn().siblings().fadeOut();
+                //找到图片，找到现在index指向的那张图片，让他淡入，并将其他的图片淡出
+                $(".tab-btn .btn").eq(index).addClass("active").siblings().removeClass("active");
+                //这里和之前类似，找到当前下标的按钮，给他添加显示样式，给其他兄弟移除样式。
+            });//通过点击事件 点击到小按钮
+            //siblings().  当我们点击给他添加样式的时候，
+            //找到除了点击以外的其他的兄弟元素，删除他的class名字
+
+            var timer = setInterval(function () {
+                index++;//下标变大
+                if (index > 4) {
+                    index = 0;
+                }
+                $(".item").eq(index).fadeIn().siblings().fadeOut();
+                //找到图片，找到现在index指向的那张图片，让他淡入，并将其他的图片淡出
+                $(".tab-btn .btn").eq(index).addClass("active").siblings().removeClass("active");
+                //这里和之前类似，找到当前下标的按钮，给他添加显示样式，给其他兄弟移除样式。
+                //通过点击事件 点击到小按钮
+            //siblings().  当我们点击给他添加样式的时候，
+            //找到除了点击以外的其他的兄弟元素，删除他的class名字
+            }, 3000);//定时器
+        </script>
+    </body></html>
+    <script>
+        // 鼠标滚轮滚动事件
+        window.addEventListener("scroll",()=>{
+            let header=document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY>0);
+        })
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+  <br>
+    <br>
+    <h1>Glasses:</h1>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div class="card">
+      <div class="card-image"></div>
+        <div class="card-description">
+          <p class="text-title"> Card Title</p>
+          <p class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <style>
+        .card {
+ height: 254px;
+ width: 190px;
+ position: relative;
+ transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+ border-radius: 1em;
+ box-shadow: 0 0 20px 8px #d0d0d0;
+ ;
+}
+
+ /*Image*/
+.card-image {
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+ background: #0a3394;
+ background: linear-gradient(to top, #0a3394, #4286f4);
+}
+
+/*Description */
+.card-description {
+  overflow: hidden;
+ display: flex;
+ position: absolute;
+ gap: 1em;
+ flex-direction: column;
+ background-color: #f5f5f5;
+ height: 70%;
+ bottom: 0;
+ border-radius: 1em 1em 0 0;
+ transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+ padding: 1rem;
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.4em;
+ font-weight: 700;
+}
+
+.text-body {
+ font-size: 1em;
+ line-height: 150%;
+}
+
+
+/* Hover states */
+
+.card:hover .card-description {
+ transform: translateY(100%);
+}
+
+
+      </style>
+</body>
+</html>
+</body>
+</html>

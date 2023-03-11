@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Sans Fallback Regular';
+}
+
+h2 {
+    font-size: 160%;
+}
+
+.bg {
+    background: #7ec6bc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #c4c113, #7ec6bc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #c4c113, #7ec6bc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+img {
+    size: 10px,5px;
+}

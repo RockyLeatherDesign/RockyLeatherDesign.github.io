@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Droid Sans Fallback Regular';
+}
+
+.itr {
+  color: aliceblue;
+}
+
+h1 {
+  color: aliceblue;
+}
+
+.logo {
+    border-radius: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 240px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+    0 2px 2px rgba(0,0,0,0.1),
+    0 4px 4px rgba(0,0,0,0.1),
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform 1s cubic-bezier(0.19,1,0.22,1);
+}
+
+.card:nth-child(1)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/yanjing.png);
+}
+
+.card:nth-child(2)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/xiukou.png);
+}
+
+.card:nth-child(3)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/tea_yanjing.jpg);
+}
+
+.card:nth-child(4)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/purple_yanjing.png);
+}
+
+.card:nth-child(5)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/blue_yanjing.png);
+}
+
+.card:nth-child(6)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/green_yanjing.png);
+}
+
+.card:nth-child(7)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/white_yanjing.png);
+}
+
+.card:nth-child(9)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/qianbao.png);
+}
+
+.card:nth-child(8)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/child_draw_wallet.png);
+}
+
+.card:nth-child(10)::before {
+    background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/hot_wallet.png);
+}
+
+.card:nth-child(11)::before {
+  background-image: url(C:/Users/Administrator/Desktop/project/Shopping/index_files/img/black_yanjing.png);
+}
+
+.card::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0,0)0%,
+    rgba(0,0,0,0.25)55%,
+    rgba(0,0,0,0.8)100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    transition: transform 1.4s cubic-bezier(0.19,1,0.22,1);
+}
+
+.card .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 16px 8px;
+    transform: translateY(60%);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+
+.card h1 {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.card .content *:not(h1){
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1),opacity 0.7s
+    cubic-bezier(0.19,1,0.22,1);
+}
+
+.card:hover {
+    align-items: center;
+}
+
+.card:hover::before{
+    transform: translateY(-5%);
+}
+
+.card:hover::after{
+    transform: translateY(-50%);
+}
+
+.card:hover .content {
+    transform: translateY(0);
+}
+
+.card:hover .content *:not(h1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+/* 分割线 */
+.button2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+
+.button2:hover {
+  letter-spacing: 0.25em;
+  background: #ff1867;
+  color: #ff1867;
+  box-shadow: 0 0 45px #ff1867;
+}
+
+.button2::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222222;
+}
+
+.button2 span {
+  position: relative;
+  z-index: 1;
+}
+
+.button2 i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button2 i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button2:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.button2 i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #ff1867;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+  background: #222222;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.button2:hover i::after {
+  width: 20px;
+  left: 80%;
+}
